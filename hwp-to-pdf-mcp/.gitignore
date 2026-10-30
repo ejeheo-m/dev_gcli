@@ -1,0 +1,17 @@
+# Build outputs
+bin/
+*.dSYM/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+
+# Temporary & output PDFs
+tests/*.pdf
+tests/batch_out/
+
+# User private test documents (Never push personal/business quotes)
+tests/jeil_gear_quote*

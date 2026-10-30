@@ -1,0 +1,17 @@
+{
+  "name": "dwg-lite-studio",
+  "version": "1.1.0",
+  "description": "Lightweight macOS CAD Studio & CLI for DWG/DXF editing (Text, Lines, Blocks) and Print-Window PDF Export",
+  "type": "module",
+  "bin": {
+    "dwg-cli": "./cli.js"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "cli": "node cli.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "@mlightcad/libredwg-web": "latest"
+  }
+}

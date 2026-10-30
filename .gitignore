@@ -15,5 +15,9 @@ Thumbs.db
 node_modules/
 dist/
 build/
+.build/
+.swiftpm/
 *.crx
 *.zip
+*.pyc
+__pycache__/
