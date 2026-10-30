@@ -1,0 +1,19 @@
+# .gitignore for dev_gcli
+
+# Large binary / installer files
+*.dmg
+*.iso
+*.pkg
+rea_dwg/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Build artifacts & debugging symbols
+*.dSYM/
+node_modules/
+dist/
+build/
+*.crx
+*.zip

@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Google Sheets In-App SplitView",
+  "version": "1.0.0",
+  "description": "구글 시트 전용 앱(PWA) 및 브라우저 창 내부에서 같은 시트를 2분할(Split View)하여 비교/수정하는 확장 프로그램",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://docs.google.com/spreadsheets/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://docs.google.com/spreadsheets/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Google Sheets SplitView Toggle"
+  }
+}
